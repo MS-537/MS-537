@@ -1,20 +1,22 @@
-# 오세찬
+# 👋 오세찬
 
 네트워크 엔지니어를 목표로 하는 명지전문대 네트워크과 학생입니다. CCNA를 보유하고 있고, 네트워크 솔루션 기업(이테크시스템 등) 취업을 준비하고 있습니다.
 
-- 웹사이트: https://ms-537.github.io/MS-537/
+- 🔗 웹사이트: https://ms-537.github.io/MS-537/
 
-## 기본 정보
+## 🎓 기본 정보
 
 - 명지전문대 네트워크과 (2026.03 입학 ~ 2028.03 졸업 예정), 학점 4.1
 - CCNA (Cisco Certified Network Associate)
 
-## 기술 스택
+## 🛠️ 기술 스택
 
-- 프로그래밍: Python
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![CCNA](https://img.shields.io/badge/CCNA-Cisco%20Certified-049FD9?style=flat&logo=cisco&logoColor=white)
+
 - 네트워크: STP, VLAN, 라우팅, 멀티레이어 스위칭
 
-## 프로젝트
+## 💻 프로젝트
 
 ### 시스코 패킷트레이서 네트워크 구성 프로젝트
 STP, VLAN, 라우팅, 멀티레이어 스위칭을 활용해 네트워크를 시뮬레이션하고 구성한 5개월짜리 프로젝트입니다. 실습을 통해 네트워크 기초 이론을 실무 관점에서 이해하고 적용했습니다.
@@ -26,6 +28,6 @@ STP, VLAN, 라우팅, 멀티레이어 스위칭을 활용해 네트워크를 시
 HTML/CSS/JS와 Express, Vercel Postgres로 만든 익명 게시판입니다. 설계부터 배포까지 직접 진행했습니다.
 - 배포: https://bulletin-board-crud.vercel.app
 
-## 연락처
+## 📫 연락처
 
 - 이메일: a40808539@gmail.com
