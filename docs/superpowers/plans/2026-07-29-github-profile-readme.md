@@ -96,30 +96,32 @@ git commit -m "docs: GitHub 프로필 README 작성"
 - Consumes: Task 1에서 커밋된 `README.md`, GitHub 아이디 `MS-537`
 - Produces: `https://github.com/MS-537/MS-537`에 push된 저장소, `https://github.com/MS-537` 프로필 페이지에 렌더링된 README
 
-- [ ] **Step 1: GitHub CLI 설치 확인 및 설치**
+- [x] **Step 1: GitHub CLI 설치 확인 및 설치**
 
 Run: `which gh || brew install gh`
 
 Expected: `gh` 명령을 사용할 수 있는 상태가 됨 (버전 출력은 `gh --version`으로 확인)
 
-- [ ] **Step 2: GitHub 인증**
+- [x] **Step 2: GitHub 인증**
 
 Run: `gh auth status || gh auth login --web --git-protocol https`
 
 Expected: `gh auth status`가 로그인된 계정을 출력함. `gh auth login`을 새로 실행해야 하는 경우, 터미널에 뜨는 one-time code와 인증 URL을 안내받아 브라우저에서 직접 승인해야 할 수 있다 — 이 경우 다음 Step으로 넘어가지 말고 사람에게 안내하고 대기한다.
 
-- [ ] **Step 3: 저장소 생성 및 로컬 저장소에 연결**
+- [x] **Step 3: 저장소 생성 및 로컬 저장소에 연결**
 
 Run: `gh repo create MS-537/MS-537 --public --source=. --remote=origin --push`
 
 Expected: 새 public 저장소가 생성되고, 현재 로컬 커밋이 그대로 push됨. 명령 출력에 `https://github.com/MS-537/MS-537` URL이 포함됨.
 
-- [ ] **Step 4: 배포 확인**
+- [x] **Step 4: 배포 확인**
 
 Run: `curl -s https://github.com/MS-537 | grep -o "게시판 CRUD 웹앱"`
 
 Expected: `게시판 CRUD 웹앱` 출력 — 프로필 페이지에 README 내용이 실제로 렌더링되었음을 확인
 
-- [ ] **Step 5: 커밋**
+**실제 결과**: curl로는 확인되지 않았다. GitHub는 조건을 만족하는 `<아이디>/<아이디>` 저장소가 생겨도, 저장소 페이지에서 **"Share to Profile" 버튼을 한 번 눌러야** 실제로 프로필에 노출된다(계획에 없던 추가 확인 단계). 이 버튼을 클릭한 뒤 `claude-in-chrome`으로 `https://github.com/MS-537`을 직접 열어 README가 정상 렌더링되는 것을 스크린샷으로 확인했다.
+
+- [x] **Step 5: 커밋**
 
 해당 없음 — 이 태스크는 파일 변경이 아니라 원격 배포 작업이므로 로컬 커밋 대상이 없음.
